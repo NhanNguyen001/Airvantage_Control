@@ -90,7 +90,7 @@ router.post( '/',
 	], async (req, res) => {
 			const errors = validationResult(req);
 			if(!errors.isEmpty()){
-					return res.status(400).json({ errors: errors.array() });
+				return res.status(400).json({ errors: errors.array() });
 			}
 			const {
 				name,
@@ -106,6 +106,7 @@ router.post( '/',
 			if(serialnumber) moduleFields.serialnumber = serialnumber;
 			if(imei) moduleFields.imei = imei;
 			if(macaddress) moduleFields.macaddress = macaddress;
+			console.log(moduleFields);
 
 		try {
 			let checkModuleName = await Module.findOne({ name: moduleFields.name });

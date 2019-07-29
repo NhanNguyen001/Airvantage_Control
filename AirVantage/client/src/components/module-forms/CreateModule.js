@@ -1,22 +1,22 @@
 import React, { useState, Fragment } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
-// import { connect } from 'react-redux';
-// import { createProfile } from '../../actions/profile';
+import { connect } from 'react-redux';
+import { createProfile } from '../../actions/module';
 
 const CreateModule = ({ createProfile, history }) => {
   const [formData, setFormData] = useState({
     name: '',
-    serialNumber: '',
+    serialnumber: '',
     imei: '',
-    macAddress: ''
+    macaddress: ''
   });
 
   const {
     name,
-    serialNumber,
+    serialnumber,
     imei,
-    macAddress
+    macaddress
   } = formData;
 
   const onChange = e => setFormData({
@@ -26,6 +26,7 @@ const CreateModule = ({ createProfile, history }) => {
 
   const onSubmit = e => {
     e.preventDefault();
+    console.log(formData);
     createProfile(formData, history);
   }
 
@@ -49,9 +50,9 @@ const CreateModule = ({ createProfile, history }) => {
         <div className="form-group">
           <input
             type="text"
-            placeholder="SerialNumber"
-            name="serialNumber"
-            value={serialNumber}
+            placeholder="serialnumber"
+            name="serialnumber"
+            value={serialnumber}
             onChange={e => onChange(e)} />
         </div>
 
@@ -67,9 +68,9 @@ const CreateModule = ({ createProfile, history }) => {
         <div className="form-group">
           <input
             type="text"
-            placeholder="MacAddress"
-            name="macAddress"
-            value={macAddress}
+            placeholder="macaddress"
+            name="macaddress"
+            value={macaddress}
             onChange={e => onChange(e)} />
         </div>
 
@@ -89,10 +90,12 @@ const CreateModule = ({ createProfile, history }) => {
     </Fragment>
   );
 }
-// <input type="submit" class="btn btn-primary" value="Go Back" />
 
 CreateModule.propTypes = {
   createProfile: PropTypes.func.isRequired
 };
 
-export default CreateModule;
+export default connect(
+  null,
+  { createProfile }
+)(withRouter(CreateModule));
