@@ -20,7 +20,6 @@ const Dashboard = () => {
   return (
     <div>
       <p><Posts posts={posts}/></p>
-      {/* <h1>Hello</h1> */}
     </div>
   );
 };

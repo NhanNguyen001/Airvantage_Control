@@ -18,7 +18,6 @@ const Posts = (props) => {
 
   return (
     <div>
-      {/* <h1 id='title'>React Dynamic Table</h1> */}
       <Table bordered>
         <thead>
           <tr>
