@@ -3,14 +3,14 @@ import { Table } from "reactstrap";
 
 import "./Posts.css";
 
-const Posts = ({ profiles }) => {
-  let table = profiles.map((post, index) => {
-    const { imei, macaddress, name } = post;
+const Posts = (props) => {
+  let table = props.posts.map((post, index) => {
+    const { imei, macaddress, name, serialnumber } = post;
     return (
       <tr key={index}>
-        <td>{index}</td>
         <td>{name}</td>
         <td>{imei}</td>
+        <td>{serialnumber}</td>
         <td>{macaddress}</td>
       </tr>
     );
