@@ -1,0 +1,57 @@
+.Search {
+  outline: None;
+  display: flex;
+  align-items: left;
+  margin: 1rem 0;
+}
+
+input{
+  outline: None;
+  padding: 6px;
+  font-size: 17px;
+  border: 2px solid rgba(105,105,105, .9);
+  border-radius: 12px;
+}
+
+/* .profileButton {
+  padding: 6px;
+  float: right;
+  border: 2px solid rgba(105,105,105, .9);
+  border-radius: 12px; */
+  /* border-radius for 'rounded' corners. */
+  /* color: black;
+} */
+
+/* .profileButton img {
+  height: 20px;
+  width: 20px;
+} */
+
+.addButton {
+  float: right;
+  outline: None;
+  display: flex;
+  align-items: flex-end;
+  padding: 6px;
+  margin-right: 5px;
+  border: 2px solid rgba(105,105,105, .9);
+  border-radius: 12px;
+  /* border-radius for 'rounded' corners. */
+  color: black;
+}
+
+.addButton img {
+  height: 20px;
+  width: 20px;
+}
+
+.addButton:hover, .profileButton:hover {
+  text-align: center;
+  background: rgba(0,139,139, .9);
+  color: white;
+}
+
+.profileButton:active, .addButton:active {
+  background: rgba(105,105,105, 1);
+}
+

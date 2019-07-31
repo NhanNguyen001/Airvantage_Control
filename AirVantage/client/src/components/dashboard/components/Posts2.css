@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+th {
+    background: rgb(0,174,255);
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-family: Roboto;
+}
+
+td {
+    text-align: center;
+}
+
+td:hover {
+    background: gray;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
