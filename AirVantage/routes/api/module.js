@@ -106,8 +106,6 @@ router.post( '/',
 			if(serialnumber) moduleFields.serialnumber = serialnumber;
 			if(imei) moduleFields.imei = imei;
 			if(macaddress) moduleFields.macaddress = macaddress;
-			console.log(moduleFields);
-
 		try {
 			let checkModuleName = await Module.findOne({ name: moduleFields.name });
 			let checkModuleSerialNumber = await Module.findOne({ serialnumber: moduleFields.serialnumber });
