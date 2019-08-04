@@ -28,7 +28,7 @@ const Login = ({ login, isAuthenticated }) => {
 
 	return <Fragment>
 		<form
-			className="form my-2 form-sign-in"
+			className="form my-n-2 form-sign-in"
 			onSubmit={e => onSubmit(e)}>
 			{/* <div 
 					className="form-image">
@@ -59,7 +59,7 @@ const Login = ({ login, isAuthenticated }) => {
 					class="btn btn-primary"
 					value="Login" /> </div>
 		</form>
-		<p class="my-1 sign-up">
+		<p class="my-n-1 sign-up">
 			Don't have an account?
 				<Link to="/register">Sign Up</Link>
 		</p>

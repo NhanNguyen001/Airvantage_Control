@@ -34,7 +34,7 @@ const Register = ({ setAlert, register, isAuthenticated, alerts }) => {
 
 	return <Fragment>
 		<form
-			className="form my-3 form-register" 
+			className="form my-n-3 form-register" 
 			onSubmit={e => onSubmit(e)}>
 			<h1 className="large text-primary">Sign Up</h1>
       <p className="lead"><i class="fas fa-user"></i> Create Your Account</p>
@@ -75,7 +75,7 @@ const Register = ({ setAlert, register, isAuthenticated, alerts }) => {
 				className="btn btn-primary" 
 				value="Register" />
 		</form>
-		<p className="my-1">
+		<p className="my-n-1">
 			Already have an account? <Link to="/login">Sign In</Link>
 		</p>
 	</Fragment>;

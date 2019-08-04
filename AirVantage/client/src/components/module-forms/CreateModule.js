@@ -32,7 +32,7 @@ const CreateModule = ({ createProfile, history }) => {
 
   return (
     <Fragment>
-      <h1 className="large text-primary my-2">
+      <h1 className="large text-primary my-n-2">
         Create Your Module
       </h1>
       <form
