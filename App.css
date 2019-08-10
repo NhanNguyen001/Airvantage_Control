@@ -29,7 +29,7 @@ body {
   background: var(--background-color);
   /* background: url("https://static.photocdn.pt/images/articles/2017_8/iStock-645869758.jpg") center no-repeat; */
   /* background: url("https://live.staticflickr.com/2914/13498954443_340878364f_o.jpg") center; */
-  background: url("https://live.staticflickr.com/3931/15362715267_1298cd8c65_o.jpg");
+  background: url("https://live.staticflickr.com/3931/15362715267_1298cd8c65_o.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -44,6 +44,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: -50px;
 }
 
 /* Text Styles*/
@@ -177,6 +178,7 @@ img {
   border: none;
   padding: 0.4rem 1.3rem;
   transition: opacity 0.2s ease-in;
+  border-radius: 20px;
 }
 
 .btn-primary,
@@ -187,6 +189,7 @@ img {
   background: rgb(0,191,255);
   color: white;
   border-radius: 20px;
+  margin-right: -10px;
 }
 
 .btn-light,
@@ -238,7 +241,7 @@ img {
   border: #ccc solid 1px;
 }
 
-.btn:hover {
+.btn, .signupButton:hover {
   opacity: 0.8;
   /* background: -webkit-linear-gradient(right,#5758BB, rgb(63, 64, 148)); */
 }
@@ -250,6 +253,7 @@ img {
 
 .bg-custom {
   background: #DAA520;
+  /* background-image: url("https://drive.google.com/file/d/1K8v3ivK_wG-6PmClclGr5IdD2QMQTH0u/view?usp=sharing"); */
   color: #fff;
 }
 
@@ -278,13 +282,15 @@ img {
 .form-sign-in {
   transform: translate(0, 2%);
   margin-bottom: .7rem;
-  margin-top: 4rem;
+  margin-top: 10rem;
+  box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.8);
 }
 
 .form-register {
   transform: translate(0, -12%);
   margin-bottom: -2.3rem;
-  margin-top: 6rem;
+  margin-top: 9rem;
+  box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.8);
 }
 
 .form .form-group {
@@ -415,7 +421,8 @@ button {
 /* Landing Page */
 .landing {
   position: relative;
-  background: url('./img/showcase3.jpg') no-repeat center;
+  /* background: url('./img/showcase3.jpg') no-repeat center; */
+  background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fsource.sierrawireless.com%2F~%2Fmedia%2Fdeveloper%2520zone%2Fnews%2Feuairtraffic.jpg.ashx%3Fla%3Den&f=1');
   height: 100vh;
   background-size: cover;
 }
@@ -657,4 +664,21 @@ button {
   .post button {
     padding: 0.3rem 0.4rem;
   }
+}
+
+.signupButton {
+  margin-right: 10px;
+  border-radius: 20px;
+  padding: 5px;
+  /* background: var(--light-color); */
+  color: #333;
+  font-size: 0.9rem;
+  border: none;
+  padding: 0.5rem 1.3rem;
+  transition: opacity 0.2s ease-in;
+  /* border-radius: 20px; */
+  background: rgb(0,191,255);
+  color: white;
+  border-radius: 20px;
+  /* margin-right: -10px; */
 }
