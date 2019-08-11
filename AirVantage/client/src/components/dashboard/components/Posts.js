@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux';
 
 import Search from './Search';
+import { deleteProfile } from '../../../actions/module';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './Posts.css';
@@ -21,18 +24,24 @@ class Posts extends Component {
 
  
   render(){
-    const { posts } = this.props;
+    const { posts, deleteProfile } = this.props;
     const { searchField } = this.state;
     const filteredMonsters = 
       posts.filter(post => post.name.toLowerCase().includes(searchField.toLowerCase()))
             .map((post, index) => {
-              const { name, imei, macaddress, serialnumber } = post
+              const { name, imei, macaddress, serialnumber, _id } = post
               return (
                 <tr key={index} className="row100 body">
                   <td className="cell100 column1">{name}</td>
                   <td className="cell100 column2">{imei}</td>
                   <td className="cell100 column3">{macaddress}</td>
                   <td className="cell100 column4">{serialnumber}</td>
+                  <td className="cell100 column5">
+                    <i 
+                      className="fas fa-times"
+                      onClick={() => deleteProfile(_id)}
+                      ></i>
+                  </td>
                 </tr>
                 )
               });       
@@ -62,6 +71,7 @@ class Posts extends Component {
                       <th className="cell100 column2">IMEI</th>
                       <th className="cell100 column3">MACADDRESS</th>
                       <th className="cell100 column4">SERIALNUMBER</th>
+                      <th className="cell100 column5">Remove</th>
                     </tr>
                   </thead>
                 </table>
@@ -78,4 +88,11 @@ class Posts extends Component {
   }
 }
 
-export default Posts;
+Posts.propTypes = {
+  // education: PropTypes.array.isRequired,
+  deleteProfile: PropTypes.func.isRequired
+};
+
+export default connect(null, 
+  { deleteProfile }
+)(Posts);

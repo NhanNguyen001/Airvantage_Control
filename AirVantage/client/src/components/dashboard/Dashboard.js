@@ -39,8 +39,8 @@ const Dashboard = ({
 };
 
 Dashboard.propTypes = {
-  getProfiles: PropTypes.func.isRequired,
-  profiles: PropTypes.object.isRequired
+  profiles: PropTypes.object.isRequired,
+  getProfiles: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({
@@ -49,5 +49,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { getProfiles }
+  { getProfiles}
 )(Dashboard);

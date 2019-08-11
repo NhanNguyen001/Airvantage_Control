@@ -24,9 +24,11 @@ body {
   font-size: 1.2rem;
   font-weight: 300;
   height: 100vh;
-  /* background-position: center center;
-  /* background-size: cover; */
   background: var(--background-color);
+  background-image: url("https://live.staticflickr.com/3931/15362715267_1298cd8c65_o.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
