@@ -27,19 +27,24 @@ body {
   /* background-position: center center;
   /* background-size: cover; */
   background: var(--background-color);
+  /* background: url("https://static.photocdn.pt/images/articles/2017_8/iStock-645869758.jpg") center no-repeat; */
+  /* background: url("https://live.staticflickr.com/2914/13498954443_340878364f_o.jpg") center; */
+  background: url("https://live.staticflickr.com/3931/15362715267_1298cd8c65_o.jpg") no-repeat;
+  background-size: cover;
 }
 
 
 /* Main style */
 .container {
   height: 100%;
-  overflow: auto;
+  /* overflow: auto; */
   display: flex;
   padding: 1rem 2rem;
   transform: translateY(9%);
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: -50px;
 }
 
 /* Text Styles*/
@@ -73,63 +78,65 @@ body {
 }
 
 /* Padding */
-.p {
+.p-n {
   padding: 0.5rem;
 }
-.p-1 {
+.p-n-1 {
   padding: 1rem;
 }
-.p-2 {
+.p-n-2 {
   padding: 2rem;
 }
-.p-3 {
+.p-n-3 {
   padding: 3rem;
 }
-.py {
+.py-n {
   padding: 0.5rem 0;
 }
-.py-1 {
+.py-n-1 {
   padding: 1rem 0;
 }
-.py-2 {
+.py-n-2 {
   padding: 2rem 0;
 }
-.py-3 {
+.py-n-3 {
   padding: 3rem 0;
 }
 
 /* Margin */
-.m {
+.m-n {
   margin: 0.5rem;
 }
-.m-1 {
+.m-n-1 {
   margin: 1rem;
 }
-.m-2 {
+.m-n-2 {
   margin: 2rem;
 }
-.m-3 {
+.m-n-3 {
   margin: 3rem;
 }
-.my {
+.my-n {
   margin: 0.5rem 0;
 }
-.my-1 {
+.my-n-1 {
   margin: 1rem 0;
 }
-.my-2 {
+.my-n-2 {
   margin: 2rem 0;
+  margin-top: 110px;
 }
-.my-3 {
+.my-n-3 {
   margin: 3rem 0;
 }
-.my-l-0{
+.my-n-l-0{
   margin-left: 0;
 }
 
 .alert {
   padding: .5rem;
   margin: .5rem 0;
+  margin-top: 2rem;
   opacity: 0.9;
   background: var(--light-color);
   color: #333;
@@ -144,13 +151,18 @@ a {
 
 ul {
   list-style: none;
+  margin-bottom: 0px;
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 18;
   font-weight: 320;
   text-align: center;
   margin-top: 2rem 0;
+  border: 1px solid rgba(64,224,208, .8);
+  border-radius: 20px;
+  color: white;
+  background: rgba(64,224,208, .8);
 }
 
 img {
@@ -167,14 +179,18 @@ img {
   border: none;
   padding: 0.4rem 1.3rem;
   transition: opacity 0.2s ease-in;
+  border-radius: 20px;
 }
 
 .btn-primary,
 .bg-primary,
 .badge-primary,
 .alert-primary {
-  background: var(--primary-color);
-  color: #fff;
+  /* background: var(--primary-color); */
+  background: rgb(0,191,255);
+  color: white;
+  border-radius: 20px;
+  margin-right: -10px;
 }
 
 .btn-light,
@@ -226,7 +242,7 @@ img {
   border: #ccc solid 1px;
 }
 
-.btn:hover {
+.btn, .signupButton:hover {
   opacity: 0.8;
   /* background: -webkit-linear-gradient(right,#5758BB, rgb(63, 64, 148)); */
 }
@@ -237,7 +253,8 @@ img {
 }
 
 .bg-custom {
-  background: #5758BB;
+  background: #DAA520;
+  /* background-image: url("https://drive.google.com/file/d/1K8v3ivK_wG-6PmClclGr5IdD2QMQTH0u/view?usp=sharing"); */
   color: #fff;
 }
 
@@ -266,13 +283,15 @@ img {
 .form-sign-in {
   transform: translate(0, 2%);
   margin-bottom: .7rem;
-  margin-top: 4rem;
+  margin-top: 10rem;
+  box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.8);
 }
 
 .form-register {
   transform: translate(0, -12%);
   margin-bottom: -2.3rem;
-  margin-top: 6rem;
+  margin-top: 9rem;
+  box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.8);
 }
 
 .form .form-group {
@@ -293,6 +312,7 @@ img {
   border-radius: 0.5rem;
   width: 100%;
   font-size: inherit;
+  outline: none;
 }
 
 .form input[type='submit'],
@@ -332,6 +352,8 @@ button {
 /* Style for the sign-up classes */
 .sign-up {
   font-size: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 .round-img {
@@ -365,7 +387,7 @@ button {
 }
 
 /* Navbar */
-.navbar {
+.navbar-n {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -379,29 +401,31 @@ button {
   margin-bottom: 50px;
 }
 
-.navbar ul {
+.navbar-n ul {
   display: flex;
 }
 
-.navbar a {
+.navbar-n a {
   color: #fff;
   padding: 0.45rem;
   margin: 0 0.25rem;
 }
 
-.navbar a:hover {
+.navbar-n a:hover {
   color: var(--primary-color);
 }
 
-.navbar .welcome span {
+.navbar-n .welcome span {
   margin-right: 0.6rem;
 }
 
 /* Landing Page */
 .landing {
   position: relative;
-  background: url('./img/showcase3.jpg') no-repeat center center/cover;
+  /* background: url('./img/showcase3.jpg') no-repeat center; */
+  background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fsource.sierrawireless.com%2F~%2Fmedia%2Fdeveloper%2520zone%2Fnews%2Feuairtraffic.jpg.ashx%3Fla%3Den&f=1');
   height: 100vh;
+  background-size: cover;
 }
 
 .landing-inner {
@@ -579,21 +603,21 @@ button {
   }
 
   /* Navbar */
-  .navbar {
+  .navbar-n {
     display: block;
     text-align: center;
   }
 
-  .navbar ul {
+  .navbar-n ul {
     text-align: center;
     justify-content: center;
   }
 
-  .navbar h1 {
+  .navbar-n h1 {
     margin-bottom: 1rem;
   }
 
-  .navbar .welcome {
+  .navbar-n .welcome {
     display: none;
   }
 
@@ -641,4 +665,21 @@ button {
   .post button {
     padding: 0.3rem 0.4rem;
   }
+}
+
+.signupButton {
+  margin-right: 10px;
+  border-radius: 20px;
+  padding: 5px;
+  /* background: var(--light-color); */
+  color: #333;
+  font-size: 0.9rem;
+  border: none;
+  padding: 0.5rem 1.3rem;
+  transition: opacity 0.2s ease-in;
+  /* border-radius: 20px; */
+  background: rgb(0,191,255);
+  color: white;
+  border-radius: 20px;
+  /* margin-right: -10px; */
 }

@@ -37,6 +37,7 @@ const App = () => {
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Private exact path="/create-module" component={CreateModule} />
+              {/* <Route exact path="/dashboard" component={Dashboard} /> */}
               <Private exact path="/dashboard" component={Dashboard} />
             </Switch>
           </section>
