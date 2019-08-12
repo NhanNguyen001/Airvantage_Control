@@ -170,15 +170,15 @@ router.post( '/update/:id', auth, async (req, res) => {
 	}
 );
 
-// @route     DELETE api/profile/
+// @route     DELETE api/module
 // @desc      Delete profile, user and posts
 // @access    Private
-router.delete('/delete/:id', auth, async (req, res) =>{
+router.delete('/:id', auth, async (req, res) =>{
 	try {
 		// Remove module by ID
 		await Module.findOneAndRemove({ _id: req.params.id });
-		
-		res.json({ msg: 'Module is deleted' });
+		let module = await Module.find()
+		res.json(module);
 	} catch (err) {
 			console.error(err.message);
 			res.status('500').send('Server Error');

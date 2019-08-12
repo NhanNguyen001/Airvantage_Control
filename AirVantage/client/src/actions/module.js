@@ -1,7 +1,12 @@
 import axios from "axios";
 import { setAlert } from "./alert";
 
-import { GET_PROFILE, GET_PROFILES, PROFILE_ERROR } from "./types";
+import { 
+  GET_PROFILE, 
+  GET_PROFILES, 
+  PROFILE_ERROR,
+  DELETE_PROFILE
+} from "./types";
 
 // Get all module profiles
 export const getProfiles = () => async dispatch => {
@@ -52,6 +57,28 @@ export const createProfile = (
       errors.forEach(error => dispatch(setAlert(error.msg, "danger")));
     }
 
+    dispatch({
+      type: PROFILE_ERROR,
+      payload: {
+        msg: err.response.statusText,
+        status: err.response.status
+      }
+    });
+  }
+};
+
+// Delete profile
+export const deleteProfile = id => async dispatch => {
+  try {
+    const res = await axios.delete(`/api/module/${id}`);
+
+    dispatch({
+      type: DELETE_PROFILE,
+      payload: res.data
+    });
+
+    dispatch(setAlert("Profile is removed", "success"));
+  } catch (err) {
     dispatch({
       type: PROFILE_ERROR,
       payload: {

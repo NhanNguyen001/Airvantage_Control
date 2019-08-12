@@ -1,4 +1,8 @@
-import { GET_PROFILES, PROFILE_ERROR } from "../actions/types";
+import { 
+  GET_PROFILES, 
+  PROFILE_ERROR,
+  DELETE_PROFILE
+} from "../actions/types";
 
 const initialState = {
   profiles: [],
@@ -9,6 +13,7 @@ const initialState = {
 export default function(state = initialState, action) {
   const { type, payload } = action;
   switch (type) {
+    case DELETE_PROFILE:
     case GET_PROFILES:
       return {
         ...state,

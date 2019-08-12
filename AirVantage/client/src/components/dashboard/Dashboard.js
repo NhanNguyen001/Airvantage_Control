@@ -40,6 +40,7 @@ const Dashboard = ({
 
 Dashboard.propTypes = {
   getProfiles: PropTypes.func.isRequired,
+  deleteProfile: PropTypes.func.isRequired,
   profiles: PropTypes.object.isRequired
 };
 
