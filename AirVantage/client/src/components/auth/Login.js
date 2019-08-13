@@ -28,13 +28,13 @@ const Login = ({ login, isAuthenticated }) => {
 
 	return <Fragment>
 		<form
-			className="form my-2 form-sign-in"
+			className="form my-n-2 form-sign-in"
 			onSubmit={e => onSubmit(e)}>
 			{/* <div 
 					className="form-image">
 					<img src="https://d29ctq871ma42a.cloudfront.net/resources/19.4.6/static/media/login_logo.c28e0894.png" />
 				</div>  */}
-			<h1 class="large text-primary">Sign Up</h1>
+			<h1 class="large text-primary">Sign In</h1>
 			<div className="form-group">
 				<input
 					type="email"
@@ -58,11 +58,12 @@ const Login = ({ login, isAuthenticated }) => {
 					type="submit"
 					class="btn btn-primary"
 					value="Login" /> </div>
+
+			<p class="my-n-1 sign-up">
+				Don't have an account?
+				<Link to="/register"> Sign Up</Link>
+			</p>
 		</form>
-		<p class="my-1 sign-up">
-			Don't have an account?
-				<Link to="/register">Sign Up</Link>
-		</p>
 	</Fragment>;
 }
 
