@@ -75,7 +75,7 @@ class Posts extends Component {
                     <th className="cell100 column1">Name</th>
                       <th className="cell100 column2">IMEI</th>
                       <th className="cell100 column3">MAC Address</th>
-                      <th className="cell100 column4">SERIAL NUMBER</th>
+                      <th className="cell100 column4">Serial Number</th>
                       <th className="cell100 column5">Remove</th>
                     </tr>
                   </thead>
