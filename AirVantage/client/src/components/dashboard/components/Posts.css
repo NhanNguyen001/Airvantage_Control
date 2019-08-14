@@ -5,7 +5,7 @@
 
 .limiter {
   width: 900px;
-  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .container-table100 {
@@ -134,18 +134,23 @@ th, td {
   margin-right: 2.1rem;
 }
 
-.removeButton {
-  background-image: url("https://image.flaticon.com/icons/png/512/43/43165.png");
-  background-size: 10%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 13%;
+/* ////////////////////////////////////////////////////// */
+
+/* button */
+
+.addButton {
+  border: 10px solid black;
+  border-radius: 20px;
+  /* color: white; */
 }
 
-.removeButton:hover {
-  background-image: url("https://image.flaticon.com/icons/png/512/107/107668.png");
-  background-size: 20%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 13%;
+.addButton:hover {
+  background: blue;
+  color: white;  
+}
+
+h2 {
+  
+  /* margin: auto; */
+  /* border-width: 20px; */
 }
