@@ -165,6 +165,13 @@ h2 {
   background: rgba(64,224,208, .8);
 }
 
+/* .sierraLogo {
+  color: red;
+  border: 1px solid white;
+  background: red;
+  
+} */
+
 img {
   width: 100%;
   height: auto;
@@ -253,10 +260,12 @@ img {
 }
 
 .bg-custom {
-  background: #DAA520;
-  /* background-image: url("https://drive.google.com/file/d/1K8v3ivK_wG-6PmClclGr5IdD2QMQTH0u/view?usp=sharing"); */
-  color: #fff;
+  background: rgba(218, 165, 32, .8);
 }
+
+/* .sierraLogo {
+  background-image: url(sierraLogo.png);
+} */
 
 .bg-radient {
   background: linear-gradient(right,#4299a7, #409dac);
@@ -368,7 +377,7 @@ button {
 
 /* Overlay */
 .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   left: 0;
@@ -387,6 +396,14 @@ button {
 }
 
 /* Navbar */
+
+.navbar-n a {
+  color: rgba(255, 255, 255, 1);
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+  opacity: 1;
+}
+
 .navbar-n {
   display: flex;
   justify-content: space-between;
@@ -397,18 +414,12 @@ button {
   width: 100%;
   top: 0;
   border-bottom: solid 1px var(--primary-color);
-  opacity: 0.9;
+  opacity: 1;
   margin-bottom: 50px;
 }
 
 .navbar-n ul {
   display: flex;
-}
-
-.navbar-n a {
-  color: #fff;
-  padding: 0.45rem;
-  margin: 0 0.25rem;
 }
 
 .navbar-n a:hover {
