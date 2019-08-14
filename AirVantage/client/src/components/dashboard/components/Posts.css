@@ -5,7 +5,7 @@
 
 .limiter {
   width: 900px;
-  margin-top: 50px;
+  margin: 0 auto;
 }
 
 .container-table100 {
@@ -72,6 +72,11 @@ th, td {
   padding-bottom: 16px;
 }
 
+.table100-body .removeButton {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 /*==================================================================
 [ Fix header ]*/
 .table100 {
@@ -134,23 +139,48 @@ th, td {
   margin-right: 2.1rem;
 }
 
-/* ////////////////////////////////////////////////////// */
+.removeButton {
+  background-image: url("https://image.flaticon.com/icons/png/512/43/43165.png");
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 14%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
-/* button */
+.removeButton:hover {
+  background-image: url("https://image.flaticon.com/icons/png/512/107/107668.png");
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 14%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
 .addButton {
-  border: 10px solid black;
-  border-radius: 20px;
-  /* color: white; */
+  background-color: rgba(102, 224, 255, .7);
+  border: 1px solid rgb(102, 224, 255);
+  border-radius: 10px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+img:hover {
+  width: 60px;
 }
 
 .addButton:hover {
-  background: blue;
-  color: white;  
+  width: 60px;
 }
 
-h2 {
-  
-  /* margin: auto; */
-  /* border-width: 20px; */
-}
+/* .addUser:hover {
+  width: 100%;
+  height: auto;
+} */
+
+/* .i.fa-user-plus:hover {
+  width: 100%;
+  height: auto;
+} */
