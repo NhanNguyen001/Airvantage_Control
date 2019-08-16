@@ -1,41 +1,89 @@
+/* .dashboardback {
+  background-color: rgba(0, 0, 0, .6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800%;
+} */
+
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* .App-header {
+  margin-top: 60px;
+  background-color: rgba(0, 0, 0, .6);
   color: white;
+} */
+
+/* .dark-cover {
+  background-color: rgba(0, 0, 0, .6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800%;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 1rem;
+  margin-top: 8em;
+  grid-gap: 100px 280px;
 }
 
-.App-link {
-  color: #61dafb;
+.grid-item-1 {
+  background-image: url('https://www.sbbit.jp/article/image/33292/570_bit201702221311226887.jpg');
+  background-size: 180px;
+  background-repeat: no-repeat;
+  padding: 80px;
+  font-size: 30px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-item-2 {
+  background-image: url('https://www.scarabtitle.com/wp-content/uploads/2018/12/first-responder-title-services-768x402.png');
+  background-repeat: no-repeat;
+  background-size: 270%;
+  padding: 80px;
+  font-size: 30px;
+  text-align: center;
 }
 
-.pagination {
-  margin-top: 10px;
+.grid-item-3 {
+  background-image: url('https://www.rcrwireless.com/wp-content/uploads/2019/03/5G-KEE-webinar-social.png');
+  background-size: cover;
+  padding: 80px;
+  font-size: 30px;
+  text-align: center;
 }
 
-.container form-layout {
-  background-image: url("https://static.photocdn.pt/images/articles/2017_8/iStock-645869758.jpg");
+.grid-item-4 {
+  background-image: url('https://littlesliceofmangoh.com/tips/images/what-sim-is-that-fig01.png');
+  background-size: 250px;
+  background-repeat: no-repeat;
+  padding-right: 80px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item-5 {
+  background-image: url('http://fossbytes.com/wp-content/uploads/2016/07/open-source-software.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item-6 {
+  background-image: url('https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2019/01/14/Photos/Processed/cybersecurity-istockphoto-kYUF--621x414@LiveMint.jpg');
+  background-position: center;
+  background-size: 150%;
+  padding: 80px;
+  font-size: 30px;
+  text-align: center;
 }
