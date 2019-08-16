@@ -3,7 +3,7 @@ import './Dashboard.css';
 
 const Dashboard = () => {
   return (
-    <section className='dashboardback'>
+    <div className='background'> //
       {/* <div className="App">
         <div className="dark-cover">
           <header className="App-header">
@@ -24,15 +24,19 @@ const Dashboard = () => {
         </div>
       </div> */}
 
-      <div class="grid-container">
-        <div class="grid-item-1"></div>
-        <div class="grid-item-2"></div>
-        <div class="grid-item-3"></div>
-        <div class="grid-item-4"></div>
-        <div class="grid-item-5"></div>
-        <div class="grid-item-6"></div>
+      <div className="dark-background">
+        <div class="grid-container">
+          <div class="grid-item-1">
+            <span class='caption'>Low Power Wide Area</span>
+          </div>
+          <div class="grid-item-2"></div>
+          <div class="grid-item-3"></div>
+          <div class="grid-item-4"></div>
+          <div class="grid-item-5"></div>
+          <div class="grid-item-6"></div>
+        </div>
       </div>
-    </section>
+    </div>
   );
 }
 
