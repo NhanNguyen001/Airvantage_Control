@@ -55,8 +55,8 @@
   /* position: absolute; */
   padding: 1rem;
   margin-top: 8em;
-  grid-gap: 5em 15em;
-  float: left;
+  grid-gap: 90px 100px;
+  /* float: left; */
   /* margin: 1.66%; */
 }
 
@@ -73,16 +73,17 @@
 
 .grid-item-1 {
   background-image: url('../../images/lpwa.jpg');
-  background-size: cover;
+  background-size: 300px;
   background-repeat: no-repeat;
-  padding: 2em;
+  background-position: center;
+  padding: 10px;
   font-size: 30px;
   text-align: center;
 }
 
 .grid-item-2 {
   background-image: url('../../images/first-responder.png'); 
-  background-size: 70%;
+  background-size: 100px;
   background-position: center;
   background-repeat: no-repeat;
   padding: 80px;
@@ -101,7 +102,7 @@
 
 .grid-item-4 {
   background-image: url('../../images/smart-sim.png');
-  background-size: 100%;
+  background-size: 250px;
   background-repeat: no-repeat;
   font-size: 30px;
   text-align: center;
@@ -109,7 +110,8 @@
 
 .grid-item-5 {
   background-image: url('../../images/open-source.png');
-  background-size: cover;
+  background-size: 150px;
+  background-repeat: no-repeat;
   background-position: center;
   padding: 80px;
   font-size: 30px;
