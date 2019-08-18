@@ -7,6 +7,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import Login from "./components/auth/Login";
 import Alert from "./components/layout/Alert";
 import CreateModule from "./components/module-forms/CreateModule";
+import EditProfile from "./components/module-forms/EditProfile";
 import Private from "./components/routing/Private";
 // Redux
 import { Provider } from "react-redux";
@@ -36,6 +37,7 @@ const App = () => {
             <Switch>
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/edit-profile/:id" component={EditProfile} />
               <Private exact path="/create-module" component={CreateModule} />
               <Private exact path="/dashboard" component={Dashboard} />
             </Switch>

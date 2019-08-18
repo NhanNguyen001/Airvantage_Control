@@ -38,6 +38,11 @@ class Posts extends Component {
                   <td className="cell100 column3">{macaddress}</td>
                   <td className="cell100 column4">{serialnumber}</td>
                   <td className="cell100 column5">
+                  <Link to={`/edit-profile/${_id}`}>
+                    <i className="fas fa-edit"></i>
+                  </Link>
+                  </td>
+                  <td className="cell100 column5">
                     <i 
                       className="fas fa-times"
                       onClick={() => deleteProfile(_id)}
@@ -72,6 +77,7 @@ class Posts extends Component {
                       <th className="cell100 column2">IMEI</th>
                       <th className="cell100 column3">MACADDRESS</th>
                       <th className="cell100 column4">SERIALNUMBER</th>
+                      <th className="cell100 column5">Edit</th>
                       <th className="cell100 column5">Remove</th>
                     </tr>
                   </thead>

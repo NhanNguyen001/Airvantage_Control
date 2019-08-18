@@ -128,7 +128,7 @@ router.post( '/',
 // @route     POST api/module
 // @desc      Update module profile
 // @access    Private
-router.post( '/update/:id', auth, async (req, res) => {
+router.post( '/:id', auth, async (req, res) => {
 	const moduleFieldsUpdate = {};
 	try {
 		await Module.findById(req.params.id);
@@ -150,13 +150,13 @@ router.post( '/update/:id', auth, async (req, res) => {
 
 	try {
 		// Update module
-		let checkModuleName = await Module.findOne({ name: moduleFieldsUpdate.name });
-		let checkModuleSerialNumber = await Module.findOne({ serialnumber: moduleFieldsUpdate.serialnumber });
-		let checkModuleImei = await Module.findOne({ imei: moduleFieldsUpdate.imei });
-		let checkModuleMacaddress = await Module.findOne({ macaddress: moduleFieldsUpdate.macaddress });
-		if(checkModuleName || checkModuleSerialNumber || checkModuleImei || checkModuleMacaddress){
-			return res.status(400).json({ msg: 'This module is available, please enter new module' });
-		}
+		// let checkModuleName = await Module.findOne({ name: moduleFieldsUpdate.name });
+		// let checkModuleSerialNumber = await Module.findOne({ serialnumber: moduleFieldsUpdate.serialnumber });
+		// let checkModuleImei = await Module.findOne({ imei: moduleFieldsUpdate.imei });
+		// let checkModuleMacaddress = await Module.findOne({ macaddress: moduleFieldsUpdate.macaddress });
+		// if(checkModuleName || checkModuleSerialNumber || checkModuleImei || checkModuleMacaddress){
+		// 	return res.status(400).json({ msg: 'This module is available, please enter new module' });
+		// }
 		let module = await Module.findOneAndUpdate(
 			{ _id: req.params.id },
 			{ $set: moduleFieldsUpdate },
