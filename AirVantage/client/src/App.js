@@ -4,6 +4,9 @@ import Navbar from "./components/layout/Navbar";
 import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Dashboard from "./components/dashboard/Dashboard";
+
+// import Dashboard2 from './components/dashboard/Dashboard2';
+
 import Login from "./components/auth/Login";
 import Alert from "./components/layout/Alert";
 import CreateModule from "./components/module-forms/CreateModule";
@@ -37,8 +40,8 @@ const App = () => {
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Private exact path="/create-module" component={CreateModule} />
-              {/* <Route exact path="/dashboard" component={Dashboard} /> */}
-              <Private exact path="/dashboard" component={Dashboard} />
+              {/* <Private exact path="/dashboard" component={Dashboard} /> */}
+              <Route exact path="/dashboard" component={Dashboard} />
             </Switch>
           </section>
         </div>

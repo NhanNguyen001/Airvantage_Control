@@ -165,13 +165,6 @@ h2 {
   background: rgba(64,224,208, .8);
 }
 
-/* .sierraLogo {
-  color: red;
-  border: 1px solid white;
-  background: red;
-  
-} */
-
 img {
   width: 100%;
   height: auto;
@@ -263,9 +256,10 @@ img {
   background: rgba(218, 165, 32, .8);
 }
 
-/* .sierraLogo {
-  background-image: url(sierraLogo.png);
-} */
+.sierraLogo {
+  background-image: url("../src/images/sierraLogo.png");
+
+}
 
 .bg-radient {
   background: linear-gradient(right,#4299a7, #409dac);
@@ -408,7 +402,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.7rem 2rem;
+  padding: 1rem 2rem;
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -433,10 +427,13 @@ button {
 /* Landing Page */
 .landing {
   position: relative;
-  /* background: url('./img/showcase3.jpg') no-repeat center; */
   background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fsource.sierrawireless.com%2F~%2Fmedia%2Fdeveloper%2520zone%2Fnews%2Feuairtraffic.jpg.ashx%3Fla%3Den&f=1');
   height: 100vh;
   background-size: cover;
+}
+
+.Register {
+  background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fsource.sierrawireless.com%2F~%2Fmedia%2Fdeveloper%2520zone%2Fnews%2Feuairtraffic.jpg.ashx%3Fla%3Den&f=1');
 }
 
 .landing-inner {
