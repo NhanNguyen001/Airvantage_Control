@@ -5,7 +5,7 @@ import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Dashboard from "./components/dashboard/Dashboard";
 
-// import Dashboard2 from './components/dashboard/Dashboard2';
+import Dashboard2 from './components/dashboard/Dashboard2';
 
 import Login from "./components/auth/Login";
 import Alert from "./components/layout/Alert";
@@ -37,11 +37,20 @@ const App = () => {
           <section className="container form-layout">
             <Alert />
             <Switch>
+
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Private exact path="/create-module" component={CreateModule} />
+
               {/* <Private exact path="/dashboard" component={Dashboard} /> */}
+              {/* <Route exact path="/dashboard2" component={Dashboard2} /> */}
+
+              // Private - After logged in
+              <Private exact path="/dashboard2" component={Dashboard2} />
               <Route exact path="/dashboard" component={Dashboard} />
+
+              {/* <Route exact path="/dashboard2" component={Dashboard2} /> */}
+
             </Switch>
           </section>
         </div>
@@ -50,4 +59,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App; 
