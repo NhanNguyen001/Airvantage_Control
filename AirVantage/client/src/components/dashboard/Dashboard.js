@@ -27,7 +27,7 @@ const Dashboard = () => {
       <div className="dark-background">
         <div class="grid-container">
           <div class="grid-item-1">
-            <span class='caption'>Low Power Wide Area</span>
+            <p class='caption'>sldgs</p>
           </div>
           <div class="grid-item-2"></div>
           <div class="grid-item-3"></div>

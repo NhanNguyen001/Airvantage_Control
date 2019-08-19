@@ -61,8 +61,10 @@ class Posts extends Component {
           <Link 
             input="button" 
             className="addButton"
-            to='/create-module'>
-              <img class='addUser' src='https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-add-512.png'></img> </Link>
+            to='/create-module'>Add
+              {/* <i class="fas fa-user-plus fa-2x"></i> */}
+              {/* <img class='addUser' src='https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-add-512.png'></img>  */}
+              </Link>
 
         </div>
         <div className="container-table100">

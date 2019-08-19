@@ -3,9 +3,14 @@
 /*//////////////////////////////////////////////////////////////////
 [ Table ]*/
 
-.limiter {
+/* .limiter {
   width: 900px;
   margin: 0 auto;
+} */
+
+.limiter {
+  width: 900px;
+  margin-top: 40px;
 }
 
 .container-table100 {
@@ -128,7 +133,8 @@ th, td {
 
 .input-group{
   width: 30%;
-  margin-left: 2.2rem;
+  margin-left: 1rem;
+  margin-top: 25px;
 }
 
 .form-control{
@@ -160,27 +166,19 @@ th, td {
 }
 
 .addButton {
-  background-color: rgba(102, 224, 255, .7);
+  margin-top: 20px;
+  background-color: rgba(151, 172, 177, 0.9);
   border: 1px solid rgb(102, 224, 255);
   border-radius: 10px;
-  width: 50px;
-  margin-right: 20px;
-}
-
-img:hover {
-  width: 60px;
+  width: 55px;
+  height: 30px;
+  margin-right: 1rem;
 }
 
 .addButton:hover {
-  width: 60px;
+  color: rgb(0, 255, 0);
 }
 
-/* .addUser:hover {
-  width: 100%;
-  height: auto;
-} */
-
-/* .i.fa-user-plus:hover {
-  width: 100%;
-  height: auto;
-} */
+.addButton {
+  color: white;
+}

@@ -35,13 +35,13 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   // </Link>
 
   return (
-    <nav className="navbar bg-custom">
+    <nav className="navbar-n bg-custom">
       <h1>
-        <Link to="/">AirVantage</Link>
+        <Link to="/" className='sierraLogo'>Sierra Wireless</Link>
       </h1>
       {!loading && (
         <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
-      )}
+      )} 
     </nav>
   );
 };

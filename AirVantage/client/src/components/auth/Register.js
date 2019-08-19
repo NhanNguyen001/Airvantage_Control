@@ -16,39 +16,39 @@ const Register = ({ setAlert, register, isAuthenticated, alerts }) => {
 	// Relate to state and setState in class component
 	const { name, email, password, password2 } = formData;
 
-	const onChange = e => 
+	const onChange = e =>
 		setFormData({ ...formData, [e.target.name]: e.target.value });
 
 	const onSubmit = async e => {
 		e.preventDefault();
-		if(password !== password2){
+		if (password !== password2) {
 			setAlert('Passwords do not match', 'danger');
 		} else {
-			register({ name, email, password});
+			register({ name, email, password });
 		}
 	};
 
-	if(isAuthenticated){
+	if (isAuthenticated) {
 		return <Redirect to="/dashboard" />
 	}
 
 	return <Fragment>
 		<form
-			className="form my-3 form-register" 
+			className="form my-n-3 form-register"
 			onSubmit={e => onSubmit(e)}>
 			<h1 className="large text-primary">Sign Up</h1>
-      <p className="lead"><i class="fas fa-user"></i> Create Your Account</p>
+			<p className="lead"><i class="fas fa-user"></i> Create Your Account</p>
 			<div className="form-group">
-				<input 
-					type="text" 
-					placeholder="Name" 
-					name="name" 
+				<input
+					type="text"
+					placeholder="Name"
+					name="name"
 					value={name}
 					onChange={e => onChange(e)} />
 			</div>
 			<div className="form-group">
-				<input 
-					type="email" 
+				<input
+					type="email"
 					placeholder="Email Address"
 					name="email"
 					value={email}
@@ -70,14 +70,15 @@ const Register = ({ setAlert, register, isAuthenticated, alerts }) => {
 					value={password2}
 					onChange={e => onChange(e)} />
 			</div>
-			<input 
-				type="submit" 
-				className="btn btn-primary" 
+			<input
+				type="submit"
+				className="btn btn-primary"
 				value="Register" />
+
+			<p className="my-n-1">
+				Already have an account? <Link to="/login"> Sign In</Link>
+			</p>
 		</form>
-		<p className="my-1">
-			Already have an account? <Link to="/login">Sign In</Link>
-		</p>
 	</Fragment>;
 }
 
@@ -92,6 +93,6 @@ const mapStateToProps = state => ({
 });
 
 export default connect(
-	mapStateToProps, 
+	mapStateToProps,
 	{ setAlert, register }
 )(Register);

@@ -24,8 +24,8 @@ const Posts = ({ profiles }) => {
           <tr>
             <th scope="row">#</th>
             <th scope="row">Name</th>
-            <th scope="row">Imei</th>
-            <th scope="row">Macaddress</th>
+            <th scope="row">IMEI</th>
+            <th scope="row">MAC Address</th>
           </tr>
         </thead>
         <tbody>{table}</tbody>
