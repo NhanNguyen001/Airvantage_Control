@@ -15,11 +15,11 @@ const ModuleSchema = new mongoose.Schema({
     },
     imei: {
       type: Number,
-      required: true
+      required: false
     },
     macaddress: {
       type: String,
-      required: true
+      required: false
     }
 });
 

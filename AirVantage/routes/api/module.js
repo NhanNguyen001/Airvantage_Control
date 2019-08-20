@@ -27,25 +27,23 @@ router.get('/', auth, async (req, res) => {
 	}
 });
 
-// @route     GET api/module/me
+// @route     GET api/module/:userID
 // @desc      Get current users module profile
 // @access    Private
-router.get('/me', auth, async (req, res) => {
-    try {
-        const module = await Module.find({ user: req.user.id }).populate(
-				'user', 
-				['email', 'avatar']);
+router.get('/:userID', auth, async (req, res) => {
+	try {
+		const module = await Module.find({ user: req.user.id }).populate('user');
 
-        if(!module){
-            res.status(400).json({ msg: 'There is no module profile for this user' });
-        }
-        
-        res.json(module);
+		if(!module){
+				res.status(400).json({ msg: 'There is no module profile for this user' });
+		}
+		
+		res.json(module);
 
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).send('Server Error');
-    }
+	} catch (err) {
+			console.error(err.message);
+			res.status(500).send('Server Error');
+	}
 });
 
 // @route     GET api/module/:id
@@ -79,12 +77,12 @@ router.post( '/',
 			check('serialnumber', 'SerialNumber is required')
 				.not()
 				.isEmpty(),
-			check('imei', 'IMEI is required')
-				.not()
-				.isEmpty(),
-			check('macaddress', 'MACaddress is required')
-				.not()
-				.isEmpty(),
+			// check('imei', 'IMEI is required')
+			// 	.not()
+			// 	.isEmpty(),
+			// check('macaddress', 'MACaddress is required')
+			// 	.not()
+			// 	.isEmpty(),
 		]
 	], async (req, res) => {
 			const errors = validationResult(req);
@@ -108,9 +106,7 @@ router.post( '/',
 		try {
 			let checkModuleName = await Module.findOne({ name: moduleFields.name });
 			let checkModuleSerialNumber = await Module.findOne({ serialnumber: moduleFields.serialnumber });
-			let checkModuleImei = await Module.findOne({ imei: moduleFields.imei });
-			let checkModuleMacaddress = await Module.findOne({ macaddress: moduleFields.macaddress });
-			if(checkModuleName || checkModuleSerialNumber || checkModuleImei || checkModuleMacaddress){
+			if(checkModuleName || checkModuleSerialNumber){
 				return res.status(400).json({ msg: 'This module is available, please enter new module' });
 			}
 			let module = await Module.findOne({ user: req.user.id });
