@@ -36,6 +36,8 @@ body {
 
 /* Main style */
 .container {
+  /* background: url("https://live.staticflickr.com/3931/15362715267_1298cd8c65_o.jpg") no-repeat;
+  background-size: cover; */
   height: 100%;
   /* overflow: auto; */
   display: flex;
@@ -134,8 +136,8 @@ body {
 }
 
 .alert {
-  padding: .5rem;
-  margin: .5rem 0;
+  /* padding: .5rem; */
+  /* margin: .5rem 0; */
   margin-top: 2rem;
   opacity: 0.9;
   background: var(--light-color);
@@ -258,7 +260,12 @@ img {
 
 .sierraLogo {
   background-image: url("../src/images/sierraLogo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.navbar-n .sierraLogo {
+  padding: .7rem;
 }
 
 .bg-radient {
@@ -290,11 +297,58 @@ img {
   box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.8);
 }
 
+.Login {
+  transform: translate(0, 2%);
+  margin-bottom: .7rem;
+  margin-top: 10rem;
+  box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.8);
+
+  margin: 2rem 0;
+  margin-top: 110px;
+
+  background-color: #fff;
+  padding: 1rem 1.4rem;
+  border-radius: .6rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
 .form-register {
   transform: translate(0, -12%);
   margin-bottom: -2.3rem;
   margin-top: 9rem;
   box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.8);
+}
+
+.Register {
+  transform: translate(0, 2%);
+  margin-bottom: .7rem;
+  margin-top: 10rem;
+  box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.8);
+
+  margin: 2rem 0;
+  margin-top: 110px;
+
+  background-color: white;
+  padding: 1rem 1.4rem;
+  border-radius: .6rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.Register input[type='name'], 
+.Register input[type='email'],
+.Register input[type='password'],
+.Register input[type='submit'] {
+  border-radius: .2rem;
 }
 
 .form .form-group {
@@ -430,10 +484,6 @@ button {
   background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fsource.sierrawireless.com%2F~%2Fmedia%2Fdeveloper%2520zone%2Fnews%2Feuairtraffic.jpg.ashx%3Fla%3Den&f=1');
   height: 100vh;
   background-size: cover;
-}
-
-.Register {
-  background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fsource.sierrawireless.com%2F~%2Fmedia%2Fdeveloper%2520zone%2Fnews%2Feuairtraffic.jpg.ashx%3Fla%3Den&f=1');
 }
 
 .landing-inner {
@@ -697,4 +747,8 @@ button {
   margin: 2rem 0;
   margin-top: 110px;
 
+}
+
+.Dashboard {
+  background-image: url('');
 }
