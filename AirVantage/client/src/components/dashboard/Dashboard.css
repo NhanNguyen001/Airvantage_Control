@@ -8,7 +8,7 @@
   height: 100vh;
 }
 
-.background {
+.dashboard {
   position: relative;
   background-image: url('../../images/tma-working.JPG');
   background-size: cover;
@@ -48,16 +48,18 @@
   height: 800%;
 } */
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  /* background-color: rgba(155, 155, 155, 0.5); */
-  /* position: absolute; */
-  padding: 1rem;
-  margin-top: 8em;
-  grid-gap: 90px 100px;
-  /* float: left; */
-  /* margin: 1.66%; */
+/* img {
+  width: 50px;
+  height: 40px;
+} */
+
+.picture {
+  height: 5em;
+  width: auto;
+}
+
+.title {
+  font-weight: bold;
 }
 
 /* div.grid-item-1 {
@@ -69,60 +71,81 @@
 
 .caption {
   display: block;
+  font-size: 1rem;
+  color: white;
+}
+
+div.grid-item-1 {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: rgba(155, 155, 155, 0.5); */
+  /* position: absolute; */
+  padding: 1rem;
+  margin-top: 4em;
+  grid-gap: 30px 90px;
+  /* float: left; */
+  /* margin: 1.66%; */
 }
 
 .grid-item-1 {
-  background-image: url('../../images/lpwa.jpg');
-  background-size: 300px;
+  display: block;
+  /* background-image: url('../../images/lpwa.jpg'); */
+  background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 10px;
+  padding: 1rem;
   font-size: 30px;
   text-align: center;
 }
 
 .grid-item-2 {
-  background-image: url('../../images/first-responder.png'); 
+  /* background-image: url('../../images/first-responder.png');  */
   background-size: 100px;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 80px;
+  padding: 1rem;
   font-size: 30px;
   text-align: center;
 }
 
 .grid-item-3 {
-  background-image: url('../../images/5g.png');
+  /* background-image: url('../../images/5g.png'); */
   background-position: center;
   background-size: cover;
-  padding: 80px;
+  padding: 1rem;
   font-size: 30px;
   text-align: center;
 }
 
 .grid-item-4 {
-  background-image: url('../../images/smart-sim.png');
+  /* background-image: url('../../images/smart-sim.png'); */
   background-size: 250px;
   background-repeat: no-repeat;
   font-size: 30px;
   text-align: center;
+  padding: 1rem;
 }
 
 .grid-item-5 {
-  background-image: url('../../images/open-source.png');
-  background-size: 150px;
+  /* background-image: url('../../images/open-source.png'); */
+  /* background-size: 200px; */
   background-repeat: no-repeat;
   background-position: center;
-  padding: 80px;
+  padding: 1rem;
   font-size: 30px;
   text-align: center;
 }
 
 .grid-item-6 {
-  background-image: url('../../images/security2.jpg');
+  /* background-image: url('../../images/security2.jpg'); */
   background-position: center;
   background-size: 150%;
-  padding: auto;
+  padding: 1rem;
   font-size: 30px;
   text-align: center;
 }
