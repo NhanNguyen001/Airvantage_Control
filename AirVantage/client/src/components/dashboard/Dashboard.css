@@ -1,37 +1,102 @@
-.dark-background {
-  background-color: rgba(155, 155, 155, .5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-size: cover;
-  height: 100vh;
+#we {
+    color: white;
+    height: 97vh;
+    background-color: rgba(255,165,0, .8);
+    border: 1px solid black;
+}
+
+.usWho {
+    color: red;
+    background: white;
+    margin-right: 55%;
+    padding: 1px;
+    border: 1px solid white;
+}
+
+#tmaBuilding {
+    height: 70vh;
+    width: auto;
+}
+
+#donotmiss {
+    background-color: rgba(255, 255, 255, .8);
+    color: red;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#note {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    color: white;
+    margin-left: 40%;
+}
+
+.where {
+    margin-top: 2em;
+    color: white;
+}
+
+.arrows {
+    height: 1.5em;
+    width: auto;
+}
+
+.tmaPhoto {
+    height: 92vh;
+    width: auto;
+    float: right;
+}
+
+.tmaSoccer {
+    width: 78vh;
+    height: auto;
+    float: left;
+    margin-top: 2rem;
+}
+
+.tma {
+    margin-top: 5em;
+    height: 50vh;
+    width: auto;
+    float: left;
+}
+
+.blackBack {
+    background-color: rgba(8, 8, 8, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    height: 300vh;
+    vertical-align: middle;
 }
 
 .dashboard {
-  position: relative;
-  background-image: url('../../images/tma-working.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
+    position: relative;
+    background-image: url('../../images/tma-working.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 180vh;
+    /* height: 100%; */
+    height: 112vh;
+    transform: translateY(-40px);
 }
 
-/* position: relative;
-  background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fsource.sierrawireless.com%2F~%2Fmedia%2Fdeveloper%2520zone%2Fnews%2Feuairtraffic.jpg.ashx%3Fla%3Den&f=1');
-  height: 100vh;
-  background-size: cover; */
+.dark-background {
+    background-color: rgba(155, 155, 155, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    height: 112vh;
+}
 
-/* background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0; */
-
-/* .App {
-  font-family: sans-serif;
-  text-align: center;
-} */
 
 /* .App-header {
   margin-top: 60px;
@@ -39,113 +104,103 @@
   color: white;
 } */
 
-/* .dark-cover {
-  background-color: rgba(0, 0, 0, .6);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 800%;
-} */
-
-/* img {
-  width: 50px;
-  height: 40px;
-} */
-
 .picture {
-  height: 5em;
-  width: auto;
+    height: 5em;
+    width: auto;
 }
+
+.openSource {
+    width: 9em;
+    height: auto;
+}
+
+
+/* .tmaPic {
+  height: 500px;
+  width: auto;
+} */
 
 .title {
-  font-weight: bold;
+    font-weight: bold;
 }
 
-/* div.grid-item-1 {
-  vertical-align: top;
-  display: inline-block;
-  text-align: center;
-  width: 120px;
-} */
-
 .caption {
-  display: block;
-  font-size: 1rem;
-  color: white;
+    display: block;
+    font-size: 1rem;
+    color: white;
 }
 
 div.grid-item-1 {
-  vertical-align: top;
-  display: inline-block;
+    vertical-align: top;
+    display: inline-block;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  /* background-color: rgba(155, 155, 155, 0.5); */
-  /* position: absolute; */
-  padding: 1rem;
-  margin-top: 4em;
-  grid-gap: 30px 90px;
-  /* float: left; */
-  /* margin: 1.66%; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background-color: rgba(155, 155, 155, 0.5); */
+    /* position: absolute; */
+    padding: 1rem;
+    margin-top: 12em;
+    grid-gap: 30px 90px;
+    /* float: left; */
+    /* margin: 1.66%; */
 }
 
 .grid-item-1 {
-  display: block;
-  /* background-image: url('../../images/lpwa.jpg'); */
-  background-size: 100px;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 1rem;
-  font-size: 30px;
-  text-align: center;
+    display: block;
+    /* background-image: url('../../images/lpwa.jpg'); */
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem;
+    font-size: 30px;
+    text-align: center;
 }
 
 .grid-item-2 {
-  /* background-image: url('../../images/first-responder.png');  */
-  background-size: 100px;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 1rem;
-  font-size: 30px;
-  text-align: center;
+    /* background-image: url('../../images/first-responder.png');  */
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    font-size: 30px;
+    text-align: center;
 }
 
 .grid-item-3 {
-  /* background-image: url('../../images/5g.png'); */
-  background-position: center;
-  background-size: cover;
-  padding: 1rem;
-  font-size: 30px;
-  text-align: center;
+    /* background-image: url('../../images/5g.png'); */
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    font-size: 30px;
+    text-align: center;
 }
 
 .grid-item-4 {
-  /* background-image: url('../../images/smart-sim.png'); */
-  background-size: 250px;
-  background-repeat: no-repeat;
-  font-size: 30px;
-  text-align: center;
-  padding: 1rem;
+    /* background-image: url('../../images/smart-sim.png'); */
+    background-size: 250px;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    text-align: center;
+    padding: 1rem;
 }
 
 .grid-item-5 {
-  /* background-image: url('../../images/open-source.png'); */
-  /* background-size: 200px; */
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 1rem;
-  font-size: 30px;
-  text-align: center;
+    /* background-image: url('../../images/open-source.png'); */
+    /* background-size: 200px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem;
+    font-size: 30px;
+    text-align: center;
 }
 
 .grid-item-6 {
-  /* background-image: url('../../images/security2.jpg'); */
-  background-position: center;
-  background-size: 150%;
-  padding: 1rem;
-  font-size: 30px;
-  text-align: center;
+    /* background-image: url('../../images/security2.jpg'); */
+    background-position: center;
+    background-size: 150%;
+    padding: 1rem;
+    font-size: 30px;
+    text-align: center;
 }
