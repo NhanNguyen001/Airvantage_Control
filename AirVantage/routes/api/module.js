@@ -27,10 +27,10 @@ router.get('/', auth, async (req, res) => {
 	}
 });
 
-// @route     GET api/module/:userID
+// @route     GET api/module/user/:userID
 // @desc      Get current users module profile
 // @access    Private
-router.get('/:userID', auth, async (req, res) => {
+router.get('/user/:userID', auth, async (req, res) => {
 	try {
 		const module = await Module.find({ user: req.user.id }).populate('user');
 
