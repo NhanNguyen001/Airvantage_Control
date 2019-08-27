@@ -36,12 +36,15 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
   return (
     <nav className="navbar-n bg-custom">
+  
       <h1>
-        <Link to="/" className='sierraLogo'>Sierra Wireless</Link>
+        <Link to="/" className='sierraLogo'></Link>
       </h1>
+      <div className="languages">Hello! Bonjour! Xin Chào! ¡Hola! Hallo!</div>
       {!loading && (
         <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
       )} 
+      
     </nav>
   );
 };
