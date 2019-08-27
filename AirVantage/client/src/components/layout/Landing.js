@@ -10,6 +10,9 @@ const Landing = () => {
 						<p className="lead">
 							Congrats you have come to the right place for the right thing!!
 						</p>
+						
+						<p>Xin Chào!</p>
+
 						<div className="buttons">
 							<Link to="/register" className="signupButton">Sign Up</Link>
 							<Link to="/login" className="btn btn-light">Login</Link>
