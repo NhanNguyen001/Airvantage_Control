@@ -255,17 +255,23 @@ img {
 }
 
 .bg-custom {
-  background: rgba(218, 165, 32, .8);
+  /* background: rgba(218, 165, 32, .8); */
+  /* background: rgba(6, 87, 150, 0.7); */
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .sierraLogo {
-  background-image: url("../src/images/sierraLogo.png");
+  /* background-image: url("../src/images/sierraLogo.png"); */
+  background-image: url("../src/images/logo_compliance-3-.png");
+  /* background-size: 100px; */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-size: 8em;
 }
 
 .navbar-n .sierraLogo {
-  padding: .7rem;
+  padding-right: 7.3em;
+  padding-bottom: 0.8em;
 }
 
 .bg-radient {
@@ -456,12 +462,14 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: .8rem 1rem;
   position: fixed;
   z-index: 1;
   width: 100%;
   top: 0;
-  border-bottom: solid 1px var(--primary-color);
+  /* border-bottom: solid 1px var(--primary-color); */
+  /* border-bottom: 1px solid rgba(218, 165, 32, .8); */
+  /* border-bottom: 1px solid rgba(0, 0, 0, .4); */
   opacity: 1;
   margin-bottom: 50px;
 }
@@ -640,7 +648,7 @@ button {
 /* Mobile Styles */
 @media (max-width: 700px) {
   .container {
-    margin-top: 8rem;
+    margin-top: 9rem;
   }
 
   .hide-sm {
@@ -745,10 +753,21 @@ button {
 .createModule {
   color: white;
   margin: 2rem 0;
-  margin-top: 110px;
+  margin-top: 10%;
 
 }
 
 .Dashboard {
   background-image: url('');
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.languages {
+  color: orange;
+  margin-right: 2.1em;
 }
