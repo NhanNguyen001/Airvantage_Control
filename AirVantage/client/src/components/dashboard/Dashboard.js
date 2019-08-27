@@ -80,6 +80,9 @@ const Dashboard = () => {
         <div>
           <img className="tmaSoccer" src={require('../../images/tma_soccer.png')} />
         </div>
+        <div>
+          <img className="workPlace" src={require("../../images/tmaPhoto.JPG")} />
+        </div>
       </div>
 
       {/* WORKPLACE */}
@@ -92,7 +95,7 @@ const Dashboard = () => {
           </div>
 
           {/* LOCATION */}
-        <div className="where">
+        <div className="hotline">
           <div>FAR FROM US?</div>
           HOTLINE: (084) 6 - 1111 111.
         </div>
